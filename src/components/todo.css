@@ -1,0 +1,55 @@
+.form_field_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.form_Grid_container{
+    align-items: center;
+    justify-content: space-between;
+}
+.form_input_fields{
+    width: 15rem;
+    height: 2rem;
+    border: 1px solid orange;
+    border-radius: 0.8rem;
+}
+.form_main_component{
+    background-color:  #535353;
+    color: #fff;
+    padding: 1rem;
+   margin-bottom: 1rem;
+}
+.button,.listing_buttons{
+    width: 7rem;
+    height: 2rem;
+    border: none;
+    border-radius: 0.8rem;
+}
+.button{
+    color: #fff;
+    background-color: orange;
+}
+.listing_main_container{
+    padding: 1rem;
+    background-color: #535353;;
+}
+.listing_description{
+    display: inline;
+    color: #fff;
+}
+.listing_buttons{
+    float: right;
+    margin-right: 2rem;
+}
+.complete{
+    border: 1px solid green;
+    color:'green'
+}
+.delete{
+    border: 1px solid red ;
+    color: red;
+}
+.listing_title{
+    color: orange;
+}
