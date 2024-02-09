@@ -7,7 +7,6 @@ import "./todo.css";
 const TodoList = () => {
   const dispatch = useDispatch();
   const taskList = useSelector((state) => state.tasks.task);
-  console.log(taskList);
 
   const handleDelete = (id) => {
     dispatch(deleteTask(id));

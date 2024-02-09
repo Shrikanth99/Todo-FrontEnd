@@ -13,7 +13,6 @@ export const addTask = createAsyncThunk('addTask', async(formData,{rejectWithVal
     // console.log('response',res.data)
     return res.data
   } catch (e) {
-    console.log('fd')
 
     return rejectWithValue(e.response.data.errors)
     //console.log(e.response.data.errors)
