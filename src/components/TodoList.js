@@ -28,7 +28,7 @@ const TodoList = () => {
                   opacity: ele.isCompleted ? 0.5 : 1,
                 }}
               >
-                <h3 className="listing_title">{ele.name}</h3>
+                <h3 className={ele.isCompleted ? "listing_title_complete" : 'listing_title' }>{ele.name}</h3>
               </span>
 
               <p
