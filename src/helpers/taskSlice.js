@@ -21,7 +21,7 @@ export const addTask = createAsyncThunk('addTask', async(formData,{rejectWithVal
 
 export const deleteTask = createAsyncThunk('deleteTask', async(id,{rejectWithValue}) => {
   try {
-    const res = await axios.delete(`http://localhost:3018/delete-Task/${id}`)
+    const res = await axios.delete(`https://todo-task-ms6g.onrender.com/delete-Task/${id}`)
     return res.data
   } catch (e) {
     console.log('',e)
@@ -32,7 +32,7 @@ export const deleteTask = createAsyncThunk('deleteTask', async(id,{rejectWithVal
 export const updateTask = createAsyncThunk('updateTask',async(id,{rejectWithValue})=> {
   try {
     console.log(id)
-    const res = await axios.put(`http://localhost:3018/update-Task/${id}`)
+    const res = await axios.put(`https://todo-task-ms6g.onrender.com/update-Task/${id}`)
     console.log('res',res.data)
     return res.data
   } catch (e) {
